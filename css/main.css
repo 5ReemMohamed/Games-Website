@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #272b30;
+    --secondary-color: #32383e;
+    --color-text: #fff;
+
+}
+body{
+    font-family: "Comfortaa", sans-serif;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: var(--primary-color);
+    color: var(--color-text);
+ }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
+   color: var(--color-text) !important; 
+   font-family: "Comic Neue", cursive;  
+   font-style: italic;
+}
+.pointer{
+    cursor: pointer;
+}
+.navbar-brand{
+    font-size: 1.7rem!important;
+    font-weight: 600!important;
+}
+.navbar-nav a{
+    color: var(--color-text) !important;
+    font-family: "Comic Neue", cursive;
+    font-size: .8rem!important;
+    font-weight: 600;
+}
+.navbar-brand img{
+    max-width: 40px
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+   color: rgb(0, 153, 204) !important;
+   transition: all 0.5s;
+}
+
+.home .card {
+    filter: grayscale(0.7);
+    transition: all 0.5s 0.2s;
+ }
+ 
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+ }
+ 
+.home .card:hover {
+    transform: scale(1.1);
+    filter: grayscale(0);
+ }
+ 
+nav {
+    background-color: rgb(58, 73, 123)!important;
+    margin: auto;
+    margin-top: -20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0 ,0, 0,  0.7);
+ }
+.card-title{
+   font-size: 1.1rem;
+   font-weight: 600;
+}
+.details {
+    background-color: rgba(39, 39, 41, 0.745);
+    min-height: 100vh;
+ }
+.badge-bg {
+    background-color: var(--secondary-color);
+}
+.badge{
+   font-family: "Comic Neue", cursive;  
+}
+
+.loading {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(39, 43, 48, 0.89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 2px solid white;
+    border-right: 2px solid transparent;
+    animation: rotation 1s linear infinite;
+    position: relative;
+ }
+
+ .loader::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 2px solid rgb(255, 61, 0);
+    border-bottom: 2px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+ }
+ .card-footer{
+    font-family: "Comic Neue", cursive;
+ }
+
+ @keyframes rotation {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
+ }
